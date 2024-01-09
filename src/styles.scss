@@ -1,1 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comme&display=swap");
+@import url('https://fonts.cdnfonts.com/css/kirens-brush-demo');
+
+/* Order */
+@layer reset, primeng;
+
+/* Reset CSS */
+@layer reset {
+    $bg_porpul: #c6538c;
+    $bg_green: #5ac14e;
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 10px;
+      font-family: "Roboto", sans-serif;
+      color: white;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      background: url("assets/img/purple.jpg") no-repeat center fixed;
+      background-size: cover;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      padding: 10rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10rem;
+    }
+
+    .section_heading {
+      text-align: center;
+    }
+
+    .section_heading h1 {
+      font-size: 3.5rem;
+      color: rgba(255, 255, 255, .3);
+      text-transform: uppercase;
+      font-weight: 300;
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .section_heading h1::before, .section_heading h1::after {
+      content: '';
+      position: absolute;
+      bottom: -.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    .section_heading h1::before {
+      width: 10rem;
+      height: 3px;
+      border-radius: .8rem;
+    }
+
+    .section_heading h1::after {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 100%;
+      bottom: -1.1rem;
+    }
+
+    .section_heading h6 {
+      font-size: 1.6rem;
+      font-weight: 300;
+    }
+}

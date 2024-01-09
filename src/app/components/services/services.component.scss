@@ -1,0 +1,57 @@
+$color_yelow:#ffe838;
+$color_pink: #fd57bf;
+
+.my_skills {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+    text-align: center;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.skill h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2rem -2px 2rem 0;
+}
+
+.icon_container {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid $color_yelow;
+    background-color: $color_pink;
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+}
+
+.icon_container i {
+    color: $color_yelow;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 750px) {
+    section {
+        width: 100%;
+        height: 70vh;
+    }
+    .container {
+        gap: 0;
+    }
+    .my_skills {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-gap: 2.5rem;
+        text-align: center;
+    }
+}

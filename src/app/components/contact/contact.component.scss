@@ -1,0 +1,40 @@
+$color_pick: #fd57bf;
+$color_yelow: #ffe838;
+
+.my_contact {
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+form label {
+  font-size: 1.5rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  // outline-color: $color_pick;
+}
+
+input[type="submit"] {
+  width: initial;
+  background-color: $color_pick;
+  color: #eee;
+  padding: 1rem 2rem;
+  border-radius: .8rem;
+  cursor: pointer;
+  transition: backgound-color 650ms;
+}
+
+input[type="submit"]:hover {
+  color: #221e3f;
+  background-color: $color_yelow;
+}
